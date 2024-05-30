@@ -2,6 +2,8 @@ package net.runeeek.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.runeeek.tutorialmod.item.ModItemGroups;
+import net.runeeek.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
